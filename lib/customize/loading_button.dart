@@ -59,7 +59,9 @@ class _LoadingButonState extends State<LoadingButon>
                   animateButton();
                 }
               });
+              
             },
+            
           ),
         ));
   }
@@ -109,6 +111,6 @@ class _LoadingButonState extends State<LoadingButon>
   void reset() {
     _width = double.infinity;
     _animatingReveal = false;
-    //  widget.state = 0;
+   // widget.state = 0;
   }
 }

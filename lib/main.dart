@@ -74,11 +74,19 @@ class _BearListState extends State<BearList> {
                 _scaffoldKey.currentState.showSnackBar(SnackBar(
                   content: Text(save.id),
                   duration: Duration(seconds: 3),
-                ));
-                setState(() {
+                  
+                ),
+                
+                );
+                
+               
+                  setState(() {
                   _state = 2;
                 });
-              }),
+               
+              },
+              
+              ),
 
           RaisedButton(
             onPressed: () async {
