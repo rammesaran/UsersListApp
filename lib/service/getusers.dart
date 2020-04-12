@@ -2,8 +2,9 @@
 import 'dart:convert';
 
 import 'package:http/http.dart' as http;
-import 'package:userslist/model/postusers.dart';
-import 'package:userslist/model/usermodel.dart';
+import 'package:userslist/model/post_users.dart';
+import 'package:userslist/model/user_model.dart';
+
 
 class GetService{
 Future<Users>  fetchservice() async {
@@ -28,15 +29,7 @@ Future<PostUsers> createPost() async {
 }
 return PostUsers.fromJson(jsonDecode(response.body.toString()));
 
- // return http.post(url,).then((http.Response response) {
-    //final int statusCode = response.statusCode;
- 
-    //if (statusCode < 200 || statusCode > 400 || json == null) {
-    //  throw new Exception("Error while fetching data");
-   // }
-   // return PostUsers.fromJson(jsonDecode(response.body.toString()));
 
-    //return PostUsers.fromJson(json.decode(response.body));
   }
 
 }
